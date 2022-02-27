@@ -1,0 +1,11 @@
+
+.section{
+  width: 100%;
+  background-color: red;
+  
+  height: 100vh;
+}
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
