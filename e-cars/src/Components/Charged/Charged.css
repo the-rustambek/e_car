@@ -1,0 +1,38 @@
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.charged .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.charged{
+  padding: 100px 10px;
+  
+}
+.charged-left, .charged-right{
+  width: 42%;
+}
+
+.charged-thumb{
+  max-width: 100%;
+  height: auto;
+}
+.charged-title{
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: normal;
+  color: #060606;
+}
+.charged-text{
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.charged-link{
+  color: #008AC9;
+  margin-top: 10px;
+  font-size: 11px;
+}
