@@ -41,12 +41,12 @@ return (
 <div className="wrapper">
   <div className="container">
   <ul className="wrapper-list">
-    <li className="wrapper-item">
+    <li className="wrapper-item wrapper-items">
       <a href="#" className="wrapper-link">
         How does  Shipping  Work ?
       </a>
     </li>
-    <li className="wrapper-item">
+    <li className="wrapper-item wrapper-items">
       <a href="#" className="wrapper-link">
       Browse our Electric Vehicles
       </a>
@@ -63,7 +63,7 @@ return (
   </div>
  
 
-  <SwitchHome />
+  {/* <SwitchHome /> */}
 
  
 
