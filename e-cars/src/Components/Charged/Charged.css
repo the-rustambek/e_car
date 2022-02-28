@@ -5,19 +5,27 @@
 
 .charged .container{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 .charged{
-  padding: 100px 10px;
+  padding: 70px 10px;
   
 }
-.charged-left, .charged-right{
-  width: 42%;
-}
 
+.charged-right{
+  width: 45%;
+}
+.charged-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+text-align: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
 .charged-thumb{
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .charged-title{
@@ -29,10 +37,76 @@
 .charged-text{
   font-size: 18px;
   margin: 20px 0;
+  width: 350px;
 }
 
 .charged-link{
   color: #008AC9;
   margin-top: 10px;
+  letter-spacing: 5px;
   font-size: 11px;
+  padding: 5px;
+  width: 150px;
+  display: block;
+  height: 
+  50px;
+}
+.charged-link::after{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 
+  20px;
+  padding: 2px;
+  background-image: url("../../Assets/Img/Player.png");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: top 50% left 50%;
+  border-radius: 50%;
+  background-color: #F4F5F6;
+  transform: translate(40%,30%)
+
+
+}
+
+
+@media(max-width:1160px){
+  .container{
+    width: 1000px;
+  }
+}
+@media(max-width:1020px){
+  .container{
+    width: 900px;
+  }
+}
+@media(max-width:920px){
+  .container{
+    width: 800px;
+  }
+}
+@media(max-width:820px){
+  .container{
+    width: 700px;
+  }
+}
+@media(max-width:70px){
+  .container{
+    width: 600px;
+  }
+}
+@media(max-width:620px){
+  .container{
+    width: 500px;
+  }
+}
+@media(max-width:520px){
+  .container{
+    width: 400px;
+  }
+}
+@media(max-width:420px){
+  .container{
+    width: 300px;
+  }
 }

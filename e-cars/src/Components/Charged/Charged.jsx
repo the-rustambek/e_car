@@ -3,7 +3,8 @@ import GetCharged
 from "../../Assets/Img/GetCharged.jpg"
 
 const Charged = () =>{
-  return (<>
+  return (
+    <>
     <div className="charged">
       <div className="container">
       <div className="charged-left">
