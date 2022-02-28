@@ -113,11 +113,11 @@ return (
           </div>
         </li>
       </ul>
-    <div className="">
+
     <a href="#" className="section-link">
         Learn More
       </a>
-    </div>
+
     </div>
   </section>
   

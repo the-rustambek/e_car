@@ -17,8 +17,12 @@ either on the road or at your home.</p>
   MORE INFO 
 </a>
       </div>
+      
       <div className="charged-right">
-        <img src={GetCharged} alt="GetCharged" className="charged-thumb" />
+        <img src={GetCharged}
+         alt="GetCharged"
+         
+          className="charged-thumb" />
       </div>
 
       </div>
