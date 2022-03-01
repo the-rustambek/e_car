@@ -6,6 +6,7 @@ import  Ev from "../../Assets/Img/Ev.png";
 import Vehicle from "../../Assets/Img/Vehicle.png";
 import online from "../../Assets/Img/online.png";
 import Delivered from "../../Assets/Img/Delivered.png";
+import Splides from "../../Components/Splide/Splide";
 
 const HomePage = () =>{
 return (
@@ -207,6 +208,7 @@ return (
 
   </div>
   </div>
+  <Splides />
 </>
 )
 }
