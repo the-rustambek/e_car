@@ -107,7 +107,7 @@ text-align: center;
     width: 70%;
   }
   .charged-thumb{
-    width: 400px;
+    width: 300px;
   }
 }
 @media(max-width:620px){
@@ -122,9 +122,6 @@ text-align: center;
   .charged-title{
     font-size: 40px;
   }
-  .charged-thumb{
-    width: 300px;
-  }
 }
 @media(max-width:420px){
   .container{
@@ -135,7 +132,7 @@ text-align: center;
     width: 200px;
   }
   .charged-thumb{
-    width: 220px;
+    width: 250px;
   }
   .charged-right{
     width: 100%;
@@ -144,5 +141,4 @@ text-align: center;
     width: 270px;
     font-size: 14px;
   }
-  
 }

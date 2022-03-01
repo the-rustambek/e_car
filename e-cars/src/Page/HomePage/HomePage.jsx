@@ -2,6 +2,7 @@ import Header from "../../Components/Header/Header"
 import "./HomePage.css"
 import Batter from "../../Assets/Img/Batter.png";
 import Charged from "../../Components/Charged/Charged";
+import  Ev from "../../Assets/Img/Ev.png";
 
 const HomePage = () =>{
 return (
@@ -122,6 +123,26 @@ return (
   </section>
   
   <Charged />
+        <div className="ev">
+            <div className="container-fluid">
+            <div className="ev-left">
+             <img src={Ev}
+                    alt="Ev" className="ev-thumb" />
+                </div>
+                <div className="ev-right">
+                  <h2 className="ev-title">
+                    Sellling Your Ev.
+              </h2>
+                <p className="ev-text">We’ll give you
+                 a fair price. Use our online trade-in
+                  estimator  to get an idea of what your EV is worth. </p>
+                <a href="#" className="ev-link">
+                  Get Appraised
+                </a>
+        </div>
+    
+    </div>
+  </div>
 </>
 )
 }
