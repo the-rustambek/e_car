@@ -7,6 +7,7 @@ import Vehicle from "../../Assets/Img/Vehicle.png";
 import online from "../../Assets/Img/online.png";
 import Delivered from "../../Assets/Img/Delivered.png";
 import Splides from "../../Components/Splide/Splide";
+import Questions from "../../Components/Questions/Questions";
 
 const HomePage = () =>{
 return (
@@ -208,7 +209,8 @@ return (
 
   </div>
   </div>
-  <Splides />
+  {/* <Splides /> */}
+  <Questions />
 </>
 )
 }

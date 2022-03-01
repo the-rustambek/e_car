@@ -37,7 +37,7 @@ const Splides  = () =>{
            autoplay: true,
          } }>
         {cars.map((car,i)=>(
-          <SplideSlide className='splide-box'>
+          <SplideSlide key={i} className='splide-box'>
           <a href="#" className="splide-link">
           <img className='splide-img' src={Car1} alt="Image 1" />
           <h4 className="splite-title">
@@ -80,6 +80,9 @@ const Splides  = () =>{
     </SplideSlide> */}
 
   </>
+  <a href="#" className="splide-links">
+  View All Vehicles               
+  </a>
   </div>
 </div>
     

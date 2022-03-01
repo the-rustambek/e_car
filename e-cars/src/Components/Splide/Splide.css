@@ -47,7 +47,22 @@
   visibility:visible;
   text-align: center;
 }
+.splide-slide{
+  margin-bottom: 40px;
+}
+.splide-links{
+  
+  text-align: center;
+  width: 400px;
+  height: 60px;
+  line-height: 60px;
+  padding: 12px 30px;
+  color: white;
+  background: 
+  linear-gradient(90deg, #00BEE6 0%,#008AC9 100%);
+  box-shadow: 0 5px 4px 0 rgb(0 0 0 / 15%);
 
+}
 @media (max-width:1420px) {
   .splide .container-fluid{
     width: 1160px;
