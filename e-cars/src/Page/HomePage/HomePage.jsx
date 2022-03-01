@@ -8,6 +8,7 @@ import online from "../../Assets/Img/online.png";
 import Delivered from "../../Assets/Img/Delivered.png";
 import Splides from "../../Components/Splide/Splide";
 import Questions from "../../Components/Questions/Questions";
+import Footer from "../../Components/Footer/Footer";
 
 const HomePage = () =>{
 return (
@@ -211,6 +212,7 @@ return (
   </div>
   {/* <Splides /> */}
   <Questions />
+  <Footer />
 </>
 )
 }
