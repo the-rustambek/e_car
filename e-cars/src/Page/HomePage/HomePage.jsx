@@ -3,6 +3,9 @@ import "./HomePage.css"
 import Batter from "../../Assets/Img/Batter.png";
 import Charged from "../../Components/Charged/Charged";
 import  Ev from "../../Assets/Img/Ev.png";
+import Vehicle from "../../Assets/Img/Vehicle.png";
+import online from "../../Assets/Img/online.png";
+import Delivered from "../../Assets/Img/Delivered.png";
 
 const HomePage = () =>{
 return (
@@ -142,6 +145,67 @@ return (
         </div>
     
     </div>
+  </div>
+  <div className="holder">
+  <div className="container-fluid">
+  <div className="holder-top">
+    <h2 className="holder-title">
+      How easy is it ?
+    </h2>
+    <p className="holder-text">
+    Simple! Just find your car and use our online system to complete the purchase.
+  No need to even leave the house!
+    </p>
+  </div>
+  <div className="holder-blok">
+  <ul className="holder-list">
+    <li className="holder-item">
+      <img src={Vehicle} alt="Vehicle" className="holder-pic" />
+    </li>
+    <li className="holder-item">
+      <h3 className="holder-subtitle">
+        1.Find Your Vehicle
+      </h3>
+    </li>
+    <li className="holder-item">
+      <p className="holder-subtext">
+      Browse hand-picked pre-owned electric vehicles.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="holder-list">
+    <li className="holder-item">
+      <img src={online} alt="online" className="holder-pic" />
+    </li>
+    <li className="holder-item">
+      <h3 className="holder-subtitle">
+      2. Purchase Online
+      </h3>
+    </li>
+    <li className="holder-item">
+      <p className="holder-subtext">
+      Chat, finance, and sign. </p>
+    </li>
+  </ul>
+  <ul className="holder-list">
+    <li className="holder-item">
+      <img src={Delivered} alt="Delivered" className="holder-pic" />
+    </li>
+    <li className="holder-item">
+      <h3 className="holder-subtitle">
+      3. Get it delivered!
+      </h3>
+    </li>
+    <li className="holder-item">
+      <p className="holder-subtext">
+      We’ll bring the vehicle to you where ever you are. </p>
+    </li>
+  </ul>
+  </div>
+ 
+
+  </div>
   </div>
 </>
 )
