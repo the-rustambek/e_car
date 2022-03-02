@@ -1,0 +1,34 @@
+
+.search-input{
+  width: 100%;
+  padding: 18px 15px;
+  padding-left: 60px;
+  font-size: 19px;
+  border: 1px solid #D3D3D3;
+}
+.search-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.search-icon{
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+  
+
+}
+
+.search-btn{
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 1%;
+  border: none;
+  background-color: #DDDDDD;
+  border-radius: 50%;
+}

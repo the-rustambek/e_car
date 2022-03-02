@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logo_y from "../../Assets/Img/Logo_y.png";
-import { faFacebook, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faLinkedin, faYoutube }
+ from '@fortawesome/free-brands-svg-icons'
 // import "./Footer.css"
 import "../../Page/HomePage/HomePage.css";
 
