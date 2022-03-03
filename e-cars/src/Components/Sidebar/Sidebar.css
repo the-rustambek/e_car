@@ -132,3 +132,67 @@ input:checked + .slider:before {
 .sidebar-btn{
   padding-left: 15px;
 }
+
+.modal-list{
+  display: flex;
+  justify-content: 
+  space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.modal-item{
+  width: 45%;
+}
+.modal {
+  position: relative;
+padding: 25px;
+
+}
+.close-btn{
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  transform: translate(-50%,-50%);
+  padding: 4px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-title{
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 5px;
+  letter-spacing: normal;
+}
+.modal-item{
+  margin: 10px;
+  background-color:#F5F5F5;
+  
+}
+.modal-link{
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.modal-result{
+  color: #008AC9;
+  font-size: 18px;
+  text-align: center;
+  margin: 15px auto;
+}
+.modal-count{
+  background-color: white;
+  padding: 10px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  border-radius: 50%;
+}

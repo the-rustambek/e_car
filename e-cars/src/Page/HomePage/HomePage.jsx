@@ -9,6 +9,7 @@ import Delivered from "../../Assets/Img/Delivered.png";
 import Splides from "../../Components/Splide/Splide";
 import Questions from "../../Components/Questions/Questions";
 import Footer from "../../Components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const HomePage = () =>{
 return (
@@ -37,9 +38,9 @@ return (
             </p>
           </li>
           <li className="main-item main-items">
-            <a href="#" className="main-link">
+            <Link href="#" className="main-link">
               VIEW ALL VEHICLES
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -50,19 +51,19 @@ return (
   <div className="container">
   <ul className="wrapper-list">
     <li className="wrapper-item wrapper-items">
-      <a href="#" className="wrapper-link">
+      <Link href="#" className="wrapper-link">
         How does  Shipping  Work ?
-      </a>
+      </Link>
     </li>
     <li className="wrapper-item wrapper-items">
-      <a href="#" className="wrapper-link">
+      <Link href="#" className="wrapper-link">
       Browse our Electric Vehicles
-      </a>
+      </Link>
     </li>
     <li className="wrapper-item">
-      <a href="#" className="wrapper-link">
+      <Link href="#" className="wrapper-link">
       Our Story
-      </a>
+      </Link>
     </li>
   </ul>
   </div>
@@ -121,9 +122,9 @@ return (
         </li>
       </ul>
 
-    <a href="#" className="section-link">
+    <Link href="#" className="section-link">
         Learn More
-      </a>
+      </Link>
 
     </div>
   </section>
@@ -142,9 +143,9 @@ return (
                 <p className="ev-text">We’ll give you
                  a fair price. Use our online trade-in
                   estimator  to get an idea of what your EV is worth. </p>
-                <a href="#" className="ev-link">
+                <Link href="#" className="ev-link">
                   Get Appraised
-                </a>
+                </Link>
         </div>
     
     </div>
