@@ -1,15 +1,24 @@
 .car-list{
   width: 24%;
   padding: 12px 8px;
+  
   background-color: white;
   padding-left: 15px;
-  margin: 10px 0;
+  margin: 15px 0
+  
+  ;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
 }
 .cars-box{
+ 
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 25px;
+  padding-bottom: 20px;
   flex-wrap: wrap;
 }
 .car-img{

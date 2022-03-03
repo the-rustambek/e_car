@@ -129,3 +129,6 @@ input:checked + .slider:before {
 .sidebar-btn:hover{
   box-shadow: 0px 1px 5px rgb(109, 102, 102);
 }
+.sidebar-btn{
+  padding-left: 15px;
+}

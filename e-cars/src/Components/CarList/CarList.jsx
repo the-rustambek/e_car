@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./CarList.css";
 import CarImg from "../../Assets/Img/CarLists.jpg";
-import { cardClasses } from "@mui/material";
+import "../../Page/VehiclesPage/VehiclesPage.css"
 
 const CarList = () =>{
   const [teslas,setTeslas]= useState([]);
