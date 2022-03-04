@@ -80,3 +80,29 @@
   height: 100%;
   object-fit: cover;
 }
+
+
+
+.details-title{
+  color: #008AC9;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.details-link p{
+  background-color: #eee;
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+.details{
+  border-top: 1px solid rgb(211, 206, 206);
+  padding: 15px 0;
+  padding-top: 25px;
+  margin-top: 25px;
+}

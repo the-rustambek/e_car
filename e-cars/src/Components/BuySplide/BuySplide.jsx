@@ -86,6 +86,108 @@ useEffect(() =>{
         </SwiperSlide>
  
       </Swiper>
+
+      <div className="details">
+            <h3 className="details-title">
+              Vehiclle details</h3>
+            <a href="#" className="details-link">
+              <p>
+                Free Vehicle History Report
+
+              </p>
+            </a>
+            <a href="#" className="details-link">
+              <p>
+                Description
+              </p>
+            </a>
+            <span>
+              <p>Electic Vehicles Fast Facts</p>
+              <p>
+
+                - 21 kWh Lithium-ion Battery
+              </p>
+              <p>- 82 mile EPA range
+              </p>
+              <p>- 140 horsepower / 400 lb.-ft torque</p>
+              <p>
+                - Front-wheel drive</p>
+            </span>
+            <span>
+              This 2014 Chevrolet Spark EV 2LT comes equipped with the following:
+            </span>
+            <span>
+              <p>- Titanium exterior</p>
+              <p>- Titanium exterior</p>
+              <p>- Titanium exterior</p>
+              <p>- Titanium exterior</p>
+              <p>- Titanium exterior</p>
+              <p>- Titanium exterior</p>
+              <p>- Titanium exterior</p>
+              <p>- Titanium exterior</p>
+              <p>- Titanium exterior</p>
+              <p>- Titanium exterior</p>
+            </span>
+            <span>
+              This 2014 Chevrolet Spark EV 2LT has an EPA rated range of 82 miles on a full charge, with a 0–60 mph time
+              of 7.9 seconds. The balance of Chevrolet factory warranties will transfer to the next owner.
+
+            </span>
+            <span>
+              <p>
+                Current Automotive is the nation's first online-focused, pre-owned electric vehicle retailer. Our team
+                has been helping drive the transition to e-mobility for more than a decade, and our mission is to be
+                champions of sustainable transportation who help people make the switch to electric by providing a fun,
+                educational, and no-pressure experience. Why? Because we care. We care about helping people, building
+                relationships, and maintaining our reputation—which means always doing the right thing.</p>
+            </span>
+            <span>
+              <p>We make it easy to transition to your first or purchase your next electric vehicle with no-haggle
+                pricing, competitive financing, nationwide shipping, and a transparent trade-in process. Find your EV,
+                buy it online, and have it delivered.</p>
+            </span>
+            <a href="#" className="details-link">
+              <p>
+                Details
+
+              </p>
+            </a><a href="#" className="details-link">
+              <p>
+                Interior
+
+              </p>
+            </a><a href="#" className="details-link">
+              <p>
+                Exterior
+
+              </p>
+            </a><a href="#" className="details-link">
+              <p>
+                Entertainment
+
+              </p>
+            </a><a href="#" className="details-link">
+              <p>
+                Mechanical
+
+              </p>
+            </a><a href="#" className="details-link">
+              <p>
+                Safety
+
+              </p>
+            </a><a href="#" className="details-link">
+              <p>
+                Tech specs
+
+              </p>
+            </a><a href="#" className="details-link">
+              <p>
+                Premium Options
+
+              </p>
+            </a>
+          </div>
     </div>
   );
 }
