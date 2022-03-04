@@ -6,15 +6,7 @@
   font-size: 20px;
 }
 
-.details-link p{
-  background-color: #eee;
-  color: #333;
-  font-size: 16px;
-  padding: 10px;
-  width: 100%;
-  margin: 10px 0;
-  border-bottom: 1px solid #eee;
-}
+ 
 
 
 .details{
@@ -40,6 +32,8 @@
 .faq_list__item{
   width: 100%;
   cursor: pointer;
+  padding: 2px;
+  padding-top: 00;
 }
 .faq_list__item .text_wrap{
   flex-grow: 2;
@@ -51,17 +45,31 @@
   align-items: center;
   justify-content: space-between;
   word-break: break-all;
-  padding: 20px;
+  padding: 8px;
 
 }
 
 .faq_list__item .faq_header{
   font-weight: 500;
-                font-size: 20px;
+                font-size: 16px;
                 margin: 0;
 
 }
 
+.faq_list__item .faq_header::before{
+content: "";
+width: 28px;
+height: 22px;
+background-repeat: no-repeat;
+display: inline-block;
+background-image: url("../../Assets/Img/timer.png");
+/* padding: 1px; */
+color: white;
+background-color: white;
+background-size: 19px;
+/* padding-bottom: 2px; */
+background-position: top 180% right 100%;
+}
 .faq_list__item .icon{
   transition: all 0.2s ease;
 

@@ -81,3 +81,94 @@
   object-fit: cover;
 }
 
+
+
+
+.basic{
+  padding: 20px;
+  border-top: 1px solid #f6f6f6;
+}
+.basic-title{
+  color: #008AC9;
+  padding: 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.basic-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+width: 100%;
+}
+.basic-item {
+  padding: 5px 0;
+  width: 45%;
+  margin: 8px 15px;
+}
+
+.buy-monthly{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+  border-top: 1px solid #dfdfdf;
+}
+
+
+.monthly-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.monthly-title{
+  color: #060606;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.monthly-input{
+  color: #008AC9;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px 2px;
+  width: 80px;
+  height: 35px;
+  /* border: none; */
+}
+.monthly-item{
+  text-align: center
+  ;
+  margin: 0 30px;
+}
+
+.monthly-item p{
+  margin: 20px 0;
+}
+
+.monthly-border{
+  background-color: #008AC9
+  ;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+.monthly-cost{
+  font-size: 
+  35px;
+
+}
+
+.monthly-subtext{
+  text-align: center;
+  width: 380px;
+  margin-top: 20px;
+}
