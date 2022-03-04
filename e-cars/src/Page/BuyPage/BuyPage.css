@@ -1,0 +1,25 @@
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+
+
+.buy-flex{
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-start;
+}
+
+.buy-main{
+  background-color: #F7F9FA;
+  padding: 50px 10px;
+}
+
+.buy-title{
+  font-size: 24px;
+  padding: 50px 0;
+  padding-top: 
+  0;
+  color: black;
+  font-weight: initial;
+}

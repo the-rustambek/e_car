@@ -1,4 +1,5 @@
 import './App.css';
+import BuyPage from './Page/BuyPage/BuyPage';
 import HomePage from './Page/HomePage/HomePage';
 import VehiclesPage from './Page/VehiclesPage/VehiclesPage';
 
@@ -7,7 +8,8 @@ function App() {
     <div className="App">
      {/* <HomePage /> */}
 
-     <VehiclesPage />
+     {/* <VehiclesPage /> */}
+     <BuyPage />
     </div>
   );
 }
