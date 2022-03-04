@@ -71,12 +71,12 @@ return (
           </span>
         </li>
       </ul>
-      <span>
+      <span className="buy-cost">
         <p>Price</p>
         <p className="buy-price">$45,990</p>
       </span>
       <span>
-        <button>
+        <button className="buy-btn">
           By online from <p>$636/mo</p>
         </button>
       </span>

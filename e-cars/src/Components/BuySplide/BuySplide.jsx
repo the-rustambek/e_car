@@ -2,7 +2,8 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';import '@splidejs/s
 import { useEffect, useState,useRef  } from 'react';
 import Car1  from "../../Assets/Img/Car1.png"
 import Car2  from "../../Assets/Img/Car2.png"
-import Car3  from "../../Assets/Img/Car3.png"
+import CarBuy 
+ from "../../Assets/Img/carbuy.jpg"
 import "./BuySplide.css"
    
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,6 +20,13 @@ import { FreeMode, Navigation, Thumbs } from "swiper";
 
 export default function BuySplide() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [swippers, setSwippers] = useState([]);
+
+useEffect(() =>{
+    fetch("https://jsonplaceholder.typicode.com/users")
+        .then((res) => res.json()).then((data) => 
+        setSwippers(data))
+},[])
 
   return (
     <div className='swiper-box'>
@@ -34,36 +42,23 @@ export default function BuySplide() {
         className="mySwiper2"
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <img src={CarBuy} />
+        </SwiperSlide>
+     
+        <SwiperSlide>
+          <img src="https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/11002667/5YJ3E1EA0LF740577/428ec6b8e35ecf06f46aeb5198bc5371.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <img src="https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/11002667/5YJ3E1EA0LF740577/b150aadf4e5ffd38073fe73f1505ffee.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <img src="https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/11002667/5YJ3E1EA0LF740577/8471d2bea09bc1fe2ae7aeba4511a091.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          <img src="https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/11002667/5YJ3E1EA0LF740577/4d92435c548c5fbe5c1835b1bb73fa35.jpg" />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-        </SwiperSlide>
-      </Swiper>
+        </Swiper>
+
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
@@ -74,35 +69,22 @@ export default function BuySplide() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <img src={CarBuy} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <img src="https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/11002667/5YJ3E1EA0LF740577/428ec6b8e35ecf06f46aeb5198bc5371.jpg" />
+        </SwiperSlide>
+         
+        <SwiperSlide>
+          <img src="https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/11002667/5YJ3E1EA0LF740577/b150aadf4e5ffd38073fe73f1505ffee.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <img src="https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/11002667/5YJ3E1EA0LF740577/8471d2bea09bc1fe2ae7aeba4511a091.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          <img src="https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/11002667/5YJ3E1EA0LF740577/4d92435c548c5fbe5c1835b1bb73fa35.jpg" />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-        </SwiperSlide>
+ 
       </Swiper>
     </div>
   );

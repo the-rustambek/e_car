@@ -1,5 +1,5 @@
-.container{
-  width: 1140px;
+.buy-main .container{
+  width: 1300px;
   margin: 0 auto;
 }
 
@@ -22,4 +22,186 @@
   0;
   color: black;
   font-weight: initial;
+}
+
+.buy-right{
+  position: fixed;
+  left: 66%;
+  top: 30%;
+  width: 450px;
+  border: 1px solid #f6f6f6;
+  box-shadow: 0 5px 10px 5px rgb(0 0 0 / 3%);
+  padding: 10px;
+  overflow-y: auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  margin-left: 10px;
+  
+}
+
+.buy-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+line-height: 120%;
+}
+.buy-item span{
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.buy-list{
+  border-top: 1px solid #f6f5f5;
+  border-bottom: 1px solid #f6f5f5;
+  padding: 15px 0;
+}
+.buy-cost{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.buy-price{
+  color: #008AC9;
+  font-size: 25px;
+  font-weight: bold;
+  
+}
+
+.buy-btn{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  padding: 15px 15px; 
+  /* margin-top: 15px; */
+}
+.buy-btn p{
+  color: #0091ea;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+.purchose-btn{
+  background-color: #0091ea;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+.purchose-btn::before{
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background-image:
+   url("../../Assets/Img/cartimg.png");
+   color:white;
+   font-size: 25px;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: top 12% right 10%;
+  /* background-color: white; */
+
+  /* color: white; */
+
+}
+.payment-btn{
+  margin: 15px 0;
+}
+.payment-btn{
+  border: none;
+  font-size: 16px;
+padding: 10px;
+width: 100%;
+  display: inline-block;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+.payment-btn::before{
+  
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    background-image:
+     url("../../Assets/Img/Payment.svg");
+     color:white;
+     
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: top 100% right 100%;
+    /* background-color: white; */
+  
+    /* color: white; */
+  
+  
+}
+
+
+.value-btn{
+  border: none;
+  font-size: 16px;
+padding: 10px;
+width: 100%;
+  display: inline-block;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+.value-btn::before{
+  
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    background-image:
+     url("../../Assets/Img/Money.svg");
+     color:white;
+     
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: top 100% right 150%;
+    /* background-color: white; */
+  
+    /* color: white; */
+  
+  
+}
+.viewed-text{
+  font-size: 
+  12px;
+  line-height: 24px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.viewed-text::before{
+  
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 20px;
+  background-image:
+   url("../../Assets/Img/people\ \(1\).png");
+   color:white;
+   
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: top 170% right 150%;
+}
+
+.buy-right{
+  margin-left: 15px;
 }
