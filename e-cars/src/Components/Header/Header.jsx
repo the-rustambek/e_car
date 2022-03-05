@@ -12,7 +12,6 @@ const Header = () =>{
     <>
     <div className="header">
       <div className="container-fluid">
-      
           <div className="header-left">
           <button className="menu-button">
           <img src={Menu} alt="Menu" 
@@ -39,13 +38,7 @@ const Header = () =>{
             </li> 
             <li className="nav-item">
                 <UnstyledSelectCustomRenderValue />
-              {/* <select className="nav-select">
-                <option disabled value="We Buy EVs ">We Buy EVs </option>
-                <option  value="We Buy EVs ">We Buy Tesles </option>
-                <option disabled value="We Buy EVs ">We Buy Rivians </option>
-                <option disabled value="We Buy EVs ">We Buy Mach-es </option>
-                <option disabled value="We Buy EVs ">We Buy All EVs and PHEVs </option>
-              </select> */}
+            
             </li>
             <li className="nav-item">
             <UnstyledSelectCustomRenderValue />
@@ -66,7 +59,8 @@ const Header = () =>{
                   className="header-icon" />
                 </button>
               </li>
-              <li className="header-item header-items">
+              <li className="header-item 
+              header-items">
                 <Link to="/available_cars" className="header-links">
                   Available Cars
                 </Link>

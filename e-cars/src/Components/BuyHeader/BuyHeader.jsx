@@ -5,6 +5,8 @@ import Phone from "../../Assets/Img/White-Phone.png"
 import "./BuyHeader.css"
 import Menu from "../../Assets/Img/Menu.png";
 import { Link } from "react-router-dom";
+import UnstyledSelectCustomRenderValue from "../Dropdown/Dropdown";
+import BuyUnstyledSelectCustomRenderValue from "../Dropdown/BuyDropdown";
 
 
 const BuyHeader = () =>{
@@ -29,40 +31,23 @@ const BuyHeader = () =>{
               </Link>
             </li>
             <li className="navs-item">
-              <Link to="" className="navs-link">
+              <Link to=""
+               className="navs-link">
                 Why Electric ?
               </Link>
             </li> <li className="navs-item">
-              <Link to="" className="navs-link">
+              <Link to=""
+               className="navs-link">
                 Charging
               </Link>
             </li> 
-            <li className="navs-item">
-              <select className="navs-select">
-                <option disabled value="We Buy EVs ">We Buy EVs </option>
-                <option  value="We Buy EVs ">We Buy Tesles </option>
-                <option disabled value="We Buy EVs ">We Buy Rivians </option>
-                <option disabled value="We Buy EVs ">We Buy Mach-es </option>
-                <option disabled value="We Buy EVs ">We Buy All EVs and PHEVs </option>
-              </select>
-            </li>
-            <li className="navs-item">
-              <select className="navs-select">
-                <option disabled value="We Buy EVs ">We Buy EVs </option>
-                <option  value="We Buy EVs ">We Buy Tesles </option>
-                <option disabled value="We Buy EVs ">We Buy Rivians </option>
-                <option disabled value="We Buy EVs ">We Buy Mach-es </option>
-                <option disabled value="We Buy EVs ">We Buy All EVs and PHEVs </option>
-              </select>
-            </li>
-            <li className="navs-item">
-              <select className="navs-select">
-                <option disabled value="We Buy EVs ">We Buy EVs </option>
-                <option  value="We Buy EVs ">We Buy Tesles </option>
-                <option disabled value="We Buy EVs ">We Buy Rivians </option>
-                <option disabled value="We Buy EVs ">We Buy Mach-es </option>
-                <option disabled value="We Buy EVs ">We Buy All EVs and PHEVs </option>
-              </select>
+            <li className="nav-item">
+  <BuyUnstyledSelectCustomRenderValue  className="navs-drop" />
+   </li>
+            <li className="nav-item">
+            <BuyUnstyledSelectCustomRenderValue  className="navs-drop"  />  </li>
+            <li className="nav-item">
+            <BuyUnstyledSelectCustomRenderValue  className="navs-drop" />
             </li>
           </ul>
           <ul className="headers-list">
@@ -77,7 +62,8 @@ const BuyHeader = () =>{
               </li>
               <li className="headers-item
                headers-items">
-                <Link to="" className="headers-links">
+                <Link to="" 
+                className="headers-links">
                   Available Cars
                 </Link>
               </li>

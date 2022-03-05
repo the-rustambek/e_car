@@ -110,19 +110,37 @@
     margin: 0px 10px;
 
   }
+  .nav-item:nth-child(2){
+    width: 120px;
+
+  }
+  body .dropdown-select{
+ 
+    width: 110px;
+  }
   
 }
 @media(max-width:1320px) {
   .container-fluid{
     width: 1100px;
+    
   }
+
   .header-item{
     margin: 0px 5px;
   }
-  .nav-item{
-    margin: 0px 5px;
+  .nav-item:nth-child(2){
+    width: 100px;
 
   }
+  body .dropdown-select{
+   
+    width: 108px;
+  }
+  .header-items{
+    display: none;
+  }
+  
   
 }
 @media(max-width:1120px) {
@@ -185,7 +203,9 @@
   .header-logo{
     width: 170px;
   }
-  
+  body .section-img{
+    width: 90%;
+  }
 }
 
 

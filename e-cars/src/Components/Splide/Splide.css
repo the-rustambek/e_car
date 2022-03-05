@@ -61,7 +61,13 @@
   background: 
   linear-gradient(90deg, #00BEE6 0%,#008AC9 100%);
   box-shadow: 0 5px 4px 0 rgb(0 0 0 / 15%);
-
+transition: 0.3s;
+}
+.splide-links:hover{
+  background : white;
+  color: #008AC9;
+  border: 1px solid #008AC9;
+  transform: scale(0.9);
 }
 @media (max-width:1420px) {
   .splide .container-fluid{

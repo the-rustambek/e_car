@@ -129,7 +129,7 @@ return (
         </li>
       </ul>
 
-    <Link to="#" className="section-link">
+    <Link to="" className="section-link">
         Learn More
       </Link>
 

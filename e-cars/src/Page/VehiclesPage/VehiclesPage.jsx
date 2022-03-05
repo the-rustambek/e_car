@@ -1,4 +1,4 @@
-import Header from "../../Components/Header/Header";
+import BuyHeader from "../../Components/BuyHeader/BuyHeader";
 import SearchAudio from "../../Components/SearchAudio/SearchAudio";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import "./VehiclesPage.css"
@@ -12,7 +12,7 @@ const VehiclesPage = () =>{
 return (
 <div className="vehicles-page">
   <div className="vh-header">
-    <Header />
+  <BuyHeader />
   </div>
   <div className="vehicles-main">
     <div className="container-fluids">

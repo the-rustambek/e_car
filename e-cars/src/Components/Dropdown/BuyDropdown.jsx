@@ -4,7 +4,7 @@ import SelectUnstyled, { selectUnstyledClasses } from '@mui/base/SelectUnstyled'
 import OptionUnstyled, { optionUnstyledClasses } from '@mui/base/OptionUnstyled';
 import PopperUnstyled from '@mui/base/PopperUnstyled';
 import { styled } from '@mui/system';
-import "../Header/Header.css"
+import "../BuyHeader/BuyHeader.css"
 const blue = {
   100: '#DAECFF',
   200: '#99CCF3',
@@ -41,7 +41,8 @@ const StyledButton = styled('button')(
   padding: 10px;
   text-align: left;
   line-height: 1.5;
-  color: ${theme.palette.mode === 'white' ? "white" : "white"};
+  color: ${theme.palette.mode === '#333' ? "#333" : "#333"};
+  font-weight: 300;
 
 
   &:hover {
@@ -77,7 +78,7 @@ const StyledListbox = styled('ul')(
   background: ${theme.palette.mode === 'transparent' ? "transparent" : 'transparent'};
   border: 1px solid ${theme.palette.mode === 'dark' ? grey[800] : grey[300]};
   border:none;
-  color: ${theme.palette.mode === '#7DC1E0' ? "#7DC1E0" : "#7DC1E0"};
+  color: ${theme.palette.mode === 'black' ? "black" : "black"};
   overflow: auto;
   outline: 0px;
   background: white;
@@ -96,18 +97,19 @@ const StyledOption = styled(OptionUnstyled)(
   }
 
   &.${optionUnstyledClasses.selected} {
-    background-color: ${theme.palette.mode === 'transparent' ? 'transparent' : 'transparent'};
-    color: ${theme.palette.mode === 'dark' ? blue[100] : blue[900]};
+    background-color: ${theme.palette.mode === 'transparent' ? 
+    'transparent' : 'transparent'};
+    color: ${theme.palette.mode === 'dark' ? "black" : "black"};
   }
 
   &.${optionUnstyledClasses.highlighted} {
     background-color: ${theme.palette.mode === 'transparent' ? 'transparent' : 'transparent'};
-    color: ${theme.palette.mode === 'dark' ? grey[300] : grey[900]};
+    color: ${theme.palette.mode === 'dark' ? "black" : "black"};
   }
 
   &.${optionUnstyledClasses.highlighted}.${optionUnstyledClasses.selected} {
     background-color: ${theme.palette.mode === 'transparent' ? 'transparent' : 'transparent'};
-    color: ${theme.palette.mode === 'dark' ? blue[100] : blue[900]};
+    color: ${theme.palette.mode === 'dark' ? "black" : "black"};
   }
 
   &.${optionUnstyledClasses.disabled} {
@@ -161,13 +163,13 @@ function renderValue(option) {
   );
 }
 
-export default function UnstyledSelectCustomRenderValue() {
+export default function BuyUnstyledSelectCustomRenderValue() {
   return (
-    <CustomSelect className="dropdown-select"
+    <CustomSelect className="navs-drop"
      renderValue={renderValue}>
-      <StyledOption className='dropdown-option' value={10}>We buy Teslas</StyledOption>
-      <StyledOption className='dropdown-option' value={20}>We buy Maches</StyledOption>
-      <StyledOption className='dropdown-option' value={30}>We buy Rivians</StyledOption>
+      <StyledOption className='navs-option' value={10}>We buy Teslas</StyledOption>
+      <StyledOption className='navs-option' value={20}>We buy Maches</StyledOption>
+      <StyledOption className='navs-option' value={30}>We buy Rivians</StyledOption>
     </CustomSelect>
   );
 }
