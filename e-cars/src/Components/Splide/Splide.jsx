@@ -2,8 +2,6 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';import '@splidejs/s
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Car1  from "../../Assets/Img/Car1.png"
-import Car2  from "../../Assets/Img/Car2.png"
-import Car3  from "../../Assets/Img/Car3.png"
 import "./Splide.css"
 
 const Splides  = () =>{
@@ -41,8 +39,8 @@ const Splides  = () =>{
          } }>
         {cars.map((car,i)=>(
           <SplideSlide key={i} className='splide-box'>
-          <Link to="/" className="splide-link">
-          <img className='splide-img' src={Car1} alt="Image 1" />
+          <Link to="/vehiclespage" className="splide-link">
+          <img className='splide-img' src={Car1} alt="Image1" />
           <h4 className="splite-title">
             {car.company.name} </h4>
             <p className="splite-text">

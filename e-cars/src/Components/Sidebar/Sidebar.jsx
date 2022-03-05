@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import Modal from "../../Components/Modal/Modal";
 import RangeSlider from "../RangeSlider/RangeSlider";
@@ -155,50 +156,50 @@ const Sidebar = () =>{
        </h3>
        <ul className="modal-list">
          <li className="modal-item">
-           <a href="#" className="modal-link">
+           <Link to="#" className="modal-link">
              <span>2022</span>
              <span className="modal-count">2</span>
-           </a>
+           </Link>
          </li>
          <li className="modal-item">
-           <a href="#" className="modal-link">
+           <Link to="#" className="modal-link">
              <span>2021</span>
              <span className="modal-count">1</span>
-           </a>
+           </Link>
          </li>  <li className="modal-item">
-           <a href="#" className="modal-link">
+           <Link to="#" className="modal-link">
              <span>2020</span>
              <span className="modal-count">7</span>
-           </a>
+           </Link>
          </li>  <li className="modal-item">
-           <a href="#" className="modal-link">
+           <Link to="#" className="modal-link">
              <span>2019</span>
              <span className="modal-count">3</span>
-           </a>
+           </Link>
          </li>  <li className="modal-item">
-           <a href="#" className="modal-link">
+           <Link to="#" className="modal-link">
              <span>2018</span>
              <span className="modal-count">5</span>
-           </a>
+           </Link>
          </li>  <li className="modal-item">
-           <a href="#" className="modal-link">
+           <Link to="#" className="modal-link">
              <span>2017</span>
              <span className="modal-count">2</span>
-           </a>
+           </Link>
          </li>  <li className="modal-item">
-           <a href="#" className="modal-link">
+           <Link to="#" className="modal-link">
              <span>2016</span>
              <span className="modal-count">11</span>
-           </a>
+           </Link>
          </li>  <li className="modal-item">
-           <a href="#" className="modal-link">
+           <Link to="#" className="modal-link">
              <span>2015</span>
              <span className="modal-count">1</span>
-           </a>
+           </Link>
          </li>
-         <a href="#" className="modal-result">
+         <Link to="#" className="modal-result">
            View Results
-         </a>
+         </Link>
        </ul>
     </Modal>
    
