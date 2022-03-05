@@ -3,6 +3,8 @@ import Search from "../../Assets/Img/White-Search.png"
 import Phone from "../../Assets/Img/White-Phone.png"
 import "./Header.css"
 import Menu from "../../Assets/Img/Menu.png";
+import { Link } from "react-router-dom";
+import UnstyledSelectCustomRenderValue from "../Dropdown/Dropdown";
 
 
 const Header = () =>{
@@ -16,51 +18,40 @@ const Header = () =>{
           <img src={Menu} alt="Menu" 
           className="menu-icon" />
         </button>
-            <a href="#" className="logo-link">
+            <Link to="/" className="logo-link">
               <img src={Logo} alt="" className="header-logo" />
-            </a>
+            </Link>
           </div>
           <ul className="nav-list">
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <Link to="/vehiclespage" className="nav-link">
                 Inventory
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <Link to="/electric" className="nav-link">
                 Why Electric ?
-              </a>
+              </Link>
             </li> <li className="nav-item">
-              <a href="#" className="nav-link">
+              <Link to="/charging" className="nav-link">
                 Charging
-              </a>
+              </Link>
             </li> 
             <li className="nav-item">
-              <select className="nav-select">
+                <UnstyledSelectCustomRenderValue />
+              {/* <select className="nav-select">
                 <option disabled value="We Buy EVs ">We Buy EVs </option>
                 <option  value="We Buy EVs ">We Buy Tesles </option>
                 <option disabled value="We Buy EVs ">We Buy Rivians </option>
                 <option disabled value="We Buy EVs ">We Buy Mach-es </option>
                 <option disabled value="We Buy EVs ">We Buy All EVs and PHEVs </option>
-              </select>
+              </select> */}
             </li>
             <li className="nav-item">
-              <select className="nav-select">
-                <option disabled value="We Buy EVs ">We Buy EVs </option>
-                <option  value="We Buy EVs ">We Buy Tesles </option>
-                <option disabled value="We Buy EVs ">We Buy Rivians </option>
-                <option disabled value="We Buy EVs ">We Buy Mach-es </option>
-                <option disabled value="We Buy EVs ">We Buy All EVs and PHEVs </option>
-              </select>
+            <UnstyledSelectCustomRenderValue />
             </li>
             <li className="nav-item">
-              <select className="nav-select">
-                <option disabled value="We Buy EVs ">We Buy EVs </option>
-                <option  value="We Buy EVs ">We Buy Tesles </option>
-                <option disabled value="We Buy EVs ">We Buy Rivians </option>
-                <option disabled value="We Buy EVs ">We Buy Mach-es </option>
-                <option disabled value="We Buy EVs ">We Buy All EVs and PHEVs </option>
-              </select>
+            <UnstyledSelectCustomRenderValue />
             </li>
           </ul>
           <ul className="header-list">
@@ -76,9 +67,9 @@ const Header = () =>{
                 </button>
               </li>
               <li className="header-item header-items">
-                <a href="#" className="header-links">
+                <Link to="/available_cars" className="header-links">
                   Available Cars
-                </a>
+                </Link>
               </li>
           </ul>
       </div>

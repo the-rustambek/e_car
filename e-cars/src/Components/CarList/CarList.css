@@ -11,9 +11,10 @@
   justify-content: center;
   /* align-items: center; */
   flex-direction: column;
+  color: black;
 }
 .cars-box{
- 
+ color: black;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

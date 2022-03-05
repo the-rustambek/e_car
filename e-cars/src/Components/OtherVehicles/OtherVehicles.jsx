@@ -1,6 +1,7 @@
 import otherCar from "../../Assets/Img/otherCar.jpg"
 import "./OtherVehicles.css"
 import "../../Page/BuyPage/BuyPage.css"
+import { Link } from "react-router-dom"
 
 const OtherVehicles = () => {
   return (
@@ -10,18 +11,18 @@ const OtherVehicles = () => {
       </h3>
       <ul className="other-list">
         <li className="other-item">
-        <a href="#" className="other-link">
+        <Link to="/buypage" className="other-link">
           <img src={otherCar} alt="otherCar" className="other-img" />
-          </a>
+          </Link>
         </li>
         <li className="other-item">
-            <a href="#" className="other-link">
+            <Link to="/buypage" className="other-link">
               Pre owned 121212  are  ned 2Pre owned Pre owned 1 
-              </a>
+              </Link>
           </li>
           <li className="other-item">
-            <a href="#" className="other-link">
-            Pending sale</a>
+            <Link to="/buypage/pending" className="other-link">
+            Pending sale</Link>
           </li>
         
       </ul>

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./CarList.css";
 import CarImg from "../../Assets/Img/CarLists.jpg";
 import "../../Page/VehiclesPage/VehiclesPage.css"
+import { Link } from "react-router-dom";
 
 const CarList = () =>{
   const [teslas,setTeslas]= useState([]);
@@ -15,7 +16,8 @@ const CarList = () =>{
   return (
       <>
      {teslas.length > 0 && (
-      <div className="cars-box">
+      <Link to="/buypage" className="cars-box">
+        
        {teslas.map((tesla,i) =>(
         <ul key={i} className="car-list">
         <li className="car-item">
@@ -60,8 +62,9 @@ const CarList = () =>{
           </p>
         </li>
       </ul>
+      
        ))}
-       </div>
+       </Link>
      )}
    
    </>

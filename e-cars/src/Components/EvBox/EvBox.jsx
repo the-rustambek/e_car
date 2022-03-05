@@ -1,5 +1,6 @@
 import "./EvBox.css"
 import  Ev from "../../Assets/Img/Ev.png";
+import { Link } from "react-router-dom";
 
 const EvBox = () =>{
   return ( 
@@ -12,9 +13,9 @@ const EvBox = () =>{
               </h2>
                 <p className="ev-text">Find out how to charge an Electric Vehicle
                 either on the road or at your home.</p>
-                <a href="#" className="ev-link">
+                <Link to="/more_info" className="ev-link">
                   MORE INFO 
-                </a>
+                </Link>
         </div>
         <div className="ev-right">
              <img src={Ev}

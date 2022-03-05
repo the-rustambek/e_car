@@ -6,10 +6,10 @@ import  Ev from "../../Assets/Img/Ev.png";
 import Vehicle from "../../Assets/Img/Vehicle.png";
 import online from "../../Assets/Img/online.png";
 import Delivered from "../../Assets/Img/Delivered.png";
-import Splides from "../../Components/Splide/Splide";
 import Questions from "../../Components/Questions/Questions";
 import Footer from "../../Components/Footer/Footer";
 import { Link } from "react-router-dom";
+import Splides from "../../Components/Splide/Splide";
 
 const HomePage = () =>{
 return (
@@ -24,7 +24,7 @@ return (
    <Header />
     <div className="main">
       <div className="container">
-        <ul className="main-list">
+        <ul className="main-list" data-aos="fade-up" data-aos-duration="10000">
           <li className="main-item">
             <h2 className="main-title">
               Pre-owned Electric Vehicles.
@@ -38,7 +38,7 @@ return (
             </p>
           </li>
           <li className="main-item main-items">
-            <Link href="#" className="main-link">
+            <Link to="/vehiclespage" className="main-link" data-aos="fade-up" data-aos-duration="15000">
               VIEW ALL VEHICLES
             </Link>
           </li>
@@ -50,18 +50,21 @@ return (
 <div className="wrapper">
   <div className="container">
   <ul className="wrapper-list">
-    <li className="wrapper-item wrapper-items">
-      <Link href="#" className="wrapper-link">
+    <li className="wrapper-item wrapper-items" data-aos="fade-up"
+     data-aos-duration="6000">
+      <Link to="#" className="wrapper-link">
         How does  Shipping  Work ?
       </Link>
     </li>
-    <li className="wrapper-item wrapper-items">
-      <Link href="#" className="wrapper-link">
+    <li className="wrapper-item wrapper-items" data-aos="fade-up"
+     data-aos-duration="4000">
+      <Link to="#" className="wrapper-link">
       Browse our Electric Vehicles
       </Link>
     </li>
-    <li className="wrapper-item">
-      <Link href="#" className="wrapper-link">
+    <li className="wrapper-item" data-aos="fade-up"
+     data-aos-duration="2000">
+      <Link to="#" className="wrapper-link">
       Our Story
       </Link>
     </li>
@@ -74,7 +77,8 @@ return (
 
   <section className="section">
     <div className="container">
-      <div className="section-header">
+      <div className="section-header"  data-aos="fade-up"
+     >
         <h2 className="section-title">
         Why switch to electric?
         </h2>
@@ -83,7 +87,8 @@ return (
         </p>
       </div>
       <ul className="section-list">
-        <li className="section-item">
+        <li className="section-item"  data-aos="fade-up"
+     data-aos-duration="3000">
           <div className="section-month">
             <div className="month-border">
             <p className="month-text">
@@ -100,11 +105,13 @@ return (
             </span>
           </div>
         </li>
-        <li className="section-item">
+        <li className="section-item"  data-aos="fade-up"
+     data-aos-duration="2000">
           <img src={Batter} alt="Batter" 
           className="section-img" />
         </li>
-        <li className="section-item">
+        <li className="section-item"  data-aos="fade-up"
+     data-aos-duration="1000">
           <div className="section-month">
             <div className="month-border">
             <p className="month-text">
@@ -122,7 +129,7 @@ return (
         </li>
       </ul>
 
-    <Link href="#" className="section-link">
+    <Link to="#" className="section-link">
         Learn More
       </Link>
 
@@ -132,18 +139,23 @@ return (
   <Charged />
         <div className="ev">
             <div className="container-fluid">
-            <div className="ev-left">
+            <div className="ev-left"data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
              <img src={Ev}
                     alt="Ev" className="ev-thumb" />
                 </div>
-                <div className="ev-right">
+                <div className="ev-right" data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-easing="ease-in">
                   <h2 className="ev-title">
                     Sellling Your Ev.
               </h2>
                 <p className="ev-text">We’ll give you
                  a fair price. Use our online trade-in
                   estimator  to get an idea of what your EV is worth. </p>
-                <Link href="#" className="ev-link">
+                <Link to="#" className="ev-link">
                   Get Appraised
                 </Link>
         </div>
@@ -152,7 +164,8 @@ return (
   </div>
   <div className="holder">
   <div className="container-fluid">
-  <div className="holder-top">
+  <div className="holder-top" data-aos="fade-up"
+     data-aos-duration="3000">
     <h2 className="holder-title">
       How easy is it ?
     </h2>
@@ -162,11 +175,12 @@ return (
     </p>
   </div>
   <div className="holder-blok">
-  <ul className="holder-list">
+  <ul className="holder-list"  data-aos="fade-up"
+     data-aos-duration="4000">
     <li className="holder-item">
       <img src={Vehicle} alt="Vehicle" className="holder-pic" />
     </li>
-    <li className="holder-item">
+    <li className="holder-item"  >
       <h3 className="holder-subtitle">
         1.Find Your Vehicle
       </h3>
@@ -178,7 +192,8 @@ return (
     </li>
   </ul>
 
-  <ul className="holder-list">
+  <ul className="holder-list"  data-aos="fade-up"
+     data-aos-duration="5000"> 
     <li className="holder-item">
       <img src={online} alt="online" className="holder-pic" />
     </li>
@@ -192,7 +207,8 @@ return (
       Chat, finance, and sign. </p>
     </li>
   </ul>
-  <ul className="holder-list">
+  <ul className="holder-list"  data-aos="fade-up"
+     data-aos-duration="7000">
     <li className="holder-item">
       <img src={Delivered} alt="Delivered" className="holder-pic" />
     </li>
@@ -211,7 +227,7 @@ return (
 
   </div>
   </div>
-  {/* <Splides /> */}
+  <Splides />
   <Questions />
   <Footer />
 </>

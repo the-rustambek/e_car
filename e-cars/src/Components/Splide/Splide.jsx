@@ -1,5 +1,6 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';import '@splidejs/splide/dist/css/splide.min.css';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Car1  from "../../Assets/Img/Car1.png"
 import Car2  from "../../Assets/Img/Car2.png"
 import Car3  from "../../Assets/Img/Car3.png"
@@ -17,7 +18,8 @@ const Splides  = () =>{
   return (
 <div className="splide">
   <div className="container-fluid">
- <div className="splide-top">
+ <div className="splide-top" data-aos="fade-up"
+     data-aos-duration="3000">
    <h2 className="splide-name">
    Available Electric Vehicles
    </h2>
@@ -29,7 +31,8 @@ const Splides  = () =>{
  </div>
  <>
       {cars.length > 0 && (
-         <Splide className='splide-slide'
+         <Splide data-aos="fade-up"
+         data-aos-duration="3000" className='splide-slide'
          options={ {
            type   : 'loop',
            perPage: 3,
@@ -38,51 +41,25 @@ const Splides  = () =>{
          } }>
         {cars.map((car,i)=>(
           <SplideSlide key={i} className='splide-box'>
-          <a href="#" className="splide-link">
+          <Link to="/" className="splide-link">
           <img className='splide-img' src={Car1} alt="Image 1" />
           <h4 className="splite-title">
             {car.company.name} </h4>
             <p className="splite-text">
               {car.address.suite} </p>        
-          </a>
+          </Link>
         </SplideSlide>
         ))}
         
   </Splide>
       )}
     
-    {/* <SplideSlide>
-      <a href="#" className="splide-link">
-      <img className='splide-img' src={Car2}  alt="Image 2" />
-<h4 className="splite-title">
-  Tesla Model 3</h4>
-  <p className="splite-text">
-    ELECTRIC</p>        
-      </a>
-    </SplideSlide>
-    <SplideSlide>
-      <a href="#" className="splide-link">
-      <img className='splide-img' src={Car3}  alt="Image 3" />
-<h4 className="splite-title">
-  Tesla Model 3</h4>
-  <p className="splite-text">
-    ELECTRIC</p>        
-      </a>
-    </SplideSlide>
-    <SplideSlide>
-      <a href="#" className="splide-link">
-      <img className='splide-img' src={Car2}  alt="Image 2" />
-<h4 className="splite-title">
-  Tesla Model 8</h4>
-  <p className="splite-text">
-    ELECTRIC</p>        
-      </a>
-    </SplideSlide> */}
 
   </>
-  <a href="#" className="splide-links">
+  <Link to="/" className="splide-links" data-aos="fade-up"
+     data-aos-duration="3000">
   View All Vehicles               
-  </a>
+  </Link>
   </div>
 </div>
     

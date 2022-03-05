@@ -4,6 +4,7 @@ import Search from
 import Phone from "../../Assets/Img/White-Phone.png"
 import "./BuyHeader.css"
 import Menu from "../../Assets/Img/Menu.png";
+import { Link } from "react-router-dom";
 
 
 const BuyHeader = () =>{
@@ -17,24 +18,24 @@ const BuyHeader = () =>{
           <img src={Menu} alt="Menu" 
           className="menu-icon" />
         </button>
-            <a href="#" className="logo-link">
+            <Link to="/" className="logo-link">
               <img src={Logo} alt="" className="headers-logo" />
-            </a>
+            </Link>
           </div>
           <ul className="navs-list">
             <li className="navs-item">
-              <a href="#" className="navs-link">
+              <Link to="/vehiclespage" className="navs-link">
                 Inventory
-              </a>
+              </Link>
             </li>
             <li className="navs-item">
-              <a href="#" className="navs-link">
+              <Link to="" className="navs-link">
                 Why Electric ?
-              </a>
+              </Link>
             </li> <li className="navs-item">
-              <a href="#" className="navs-link">
+              <Link to="" className="navs-link">
                 Charging
-              </a>
+              </Link>
             </li> 
             <li className="navs-item">
               <select className="navs-select">
@@ -76,9 +77,9 @@ const BuyHeader = () =>{
               </li>
               <li className="headers-item
                headers-items">
-                <a href="#" className="headers-links">
+                <Link to="" className="headers-links">
                   Available Cars
-                </a>
+                </Link>
               </li>
           </ul>
       </div>      

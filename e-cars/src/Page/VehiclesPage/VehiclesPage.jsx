@@ -7,6 +7,7 @@ import Menu3 from "../../Assets/Img/Menu3.png"
 import CarList from "../../Components/CarList/CarList";
 import Questions from "../../Components/Questions/Questions";
 import Footer from "../../Components/Footer/Footer";
+import { Link } from "react-router-dom";
 const VehiclesPage = () =>{
 return (
 <div className="vehicles-page">
@@ -18,7 +19,7 @@ return (
       <div className="vehicles-flex">
         <Sidebar />
         <div className="vehicles-box">
-<div className="">
+          <div className="">
             <SearchAudio />
             </div>
             <div className="results-top">
@@ -28,12 +29,12 @@ return (
               <ul className="results-list">
                 <li className="results-item">
                   <span className="results-span">
-                    <a href="#" className="results-link">
+                    <Link to="/vehiclespage" className="results-link">
                       <img className="results-icon" src={Menu2} alt="Menu2" />
-                    </a>
-                    <a href="#" className="results-link">
+                    </Link>
+                    <Link to="/vehiclespage" className="results-link">
                       <img className="results-icon" src={Menu3} alt="Menu3" />
-                    </a>
+                    </Link>
 
                   </span>
                 </li>
