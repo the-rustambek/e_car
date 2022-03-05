@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Accordion.css";
 import DownIcon
 from "../../Assets/Img/down.svg"
+import "../../Page/BuyPage/BuyPage.css"
 
 const Accordion = (props) =>{
 const [selected, setSelected] = useState(null);

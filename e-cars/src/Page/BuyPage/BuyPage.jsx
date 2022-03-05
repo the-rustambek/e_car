@@ -6,6 +6,8 @@ import Footer from "../../Components/Footer/Footer";
 import BuySplide from "../../Components/BuySplide/BuySplide";
 import "swiper/css/bundle";
 import BuyHeader from "../../Components/BuyHeader/BuyHeader";
+import BuyContent from "../../Components/BuyContent/BuyContent";
+ 
 
 
 const BuyPage = () =>{
@@ -13,19 +15,17 @@ return (
 <div className="buy-page">
   <div className="buy-top">
     <BuyHeader />
-  </div>
+  </div> 
+
   <div className="buy-main">
     <div className="container">
       <h2 className="buy-title">
         Pre-Owned 2020 Tesla Model 3 Standard Range Plus RWD AP | 263 miles range
       </h2>
       <div className="buy-flex">
-
         <div className="buy-left">
-
-          <BuySplide />
-          
-
+          <BuySplide />  
+            
         </div>
         <div className="buy-right">
           <ul className="buy-list">
@@ -93,9 +93,20 @@ return (
           </p>
         </div>
       </div>
-    </div>
-  </div>
+      <div className="buy-bottom">
+      <BuyContent/>
+      </div>
 </div>
+
+  </div>
+
+  <div className="buy-footer">
+<Questions />
+  <Footer />
+  </div>
+
+</div>
+
 )
 }
 

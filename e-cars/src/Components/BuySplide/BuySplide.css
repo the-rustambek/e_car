@@ -5,6 +5,7 @@
 .swiper-box{
   width: 870px;
   height: 650px;
+  
 }
 
 .swiper {
@@ -138,7 +139,7 @@ width: 100%;
   padding: 5px 2px;
   width: 80px;
   height: 35px;
-  /* border: none; */
+  background-color: #F1F2F2;
 }
 .monthly-item{
   text-align: center
@@ -171,4 +172,5 @@ width: 100%;
   text-align: center;
   width: 380px;
   margin-top: 20px;
+  font-size: 18px;
 }

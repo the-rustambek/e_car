@@ -1,3 +1,4 @@
+import "../../Page/BuyPage/BuyPage.css"
 const BuyMonthly = () =>{
   return (
     <div className="buy-monthly">
@@ -26,7 +27,8 @@ const BuyMonthly = () =>{
         <p>Current Combined MPG</p>
         </li>
         </ul>
-        <p className="monthly-subtext">
+        <p 
+        className="monthly-subtext">
         Enter your daily mileage and combined MPG to see how much you could save.
         </p>
     </div>
