@@ -4,6 +4,7 @@
   padding: 18px 15px;
   padding-left: 60px;
   font-size: 19px;
+  background-color: transparent;
   border: 1px solid #D3D3D3;
 }
 .search-form{
@@ -11,12 +12,13 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: transparent;
 }
 .search-icon{
   width: 28px;
   height: 28px;
   padding: 5px;
-  
+  background-color: transparent;
 
 }
 
@@ -31,4 +33,5 @@
   border: none;
   background-color: #DDDDDD;
   border-radius: 50%;
+  /* background-color: transparent; */
 }

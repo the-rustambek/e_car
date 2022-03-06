@@ -1,10 +1,11 @@
 import Logo from "../../Assets/Img/Logo_x.png"
 import Search from "../../Assets/Img/White-Search.png"
-import Phone from "../../Assets/Img/White-Phone.png"
 import "./Header.css"
 import Menu from "../../Assets/Img/Menu.png";
 import { Link } from "react-router-dom";
 import UnstyledSelectCustomRenderValue from "../Dropdown/Dropdown";
+import PhoneSelectCustomRenderValue 
+from "../Dropdown/PhoneDropdown";
 
 
 const Header = () =>{
@@ -54,10 +55,8 @@ const Header = () =>{
                 </button>
               </li>
               <li className="header-item">
-                <button className="header-btn">
-                  <img src={Phone} alt="Phone" 
-                  className="header-icon" />
-                </button>
+ <PhoneSelectCustomRenderValue />
+               
               </li>
               <li className="header-item 
               header-items">

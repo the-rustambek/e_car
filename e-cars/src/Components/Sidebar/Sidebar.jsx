@@ -76,68 +76,69 @@ const Sidebar = () =>{
       </span>
       <ul className="sidebar-list">
         <li className="sidebar-item">
-          <button className="sidebar-btn"  onClick={()=> openYearModal()} >
+          <button className="sidebar-btn"
+            onClick={()=> openYearModal()} >
           <i className="fa-solid fa-clock"></i>
           <p>Year</p>
           </button>
         </li>
         
         <li className="sidebar-item">
-          <button className="sidebar-btn" >
+          <button className="sidebar-btn" onClick={()=> openYearModal()} >
           <i className="fa-solid fa-car"></i>
           <p>Make</p>
           </button>
         </li>
         <li className="sidebar-item">
-          <button className="sidebar-btn">
+          <button className="sidebar-btn"  onClick={()=> openYearModal()}>
           <i className="fa-solid fa-car"></i>
           <p>Model</p>
           </button>
         </li>
        
         <li className="sidebar-item">
-          <button className="sidebar-btn">
+          <button className="sidebar-btn"  onClick={()=> openYearModal()}>
           <i className="fa-solid fa-square-plus"></i>
           <p>Trim</p>
           </button>
         </li>
         <li className="sidebar-item">
-          <button className="sidebar-btn">
+          <button className="sidebar-btn"  onClick={()=> openYearModal()}>
           <i className="fa-solid fa-clock"></i>
           <p>Features</p>
           </button>
         </li>
         <li className="sidebar-item">
-          <button className="sidebar-btn">
+          <button className="sidebar-btn" onClick={()=> openYearModal()}>
           <i className="fa-solid fa-clock"></i>
            <p>Fueltype</p>
           </button>
         </li>
         <li className="sidebar-item">
-          <button className="sidebar-btn">
+          <button className="sidebar-btn" onClick={()=> openYearModal()}>
           <i className="fa-solid fa-square-plus"></i>
           <p>Transmission</p>
           </button>
         </li>
         <li className="sidebar-item">
-          <button className="sidebar-btn">
+          <button className="sidebar-btn" onClick={()=> openYearModal()}>
           <i className="fa-solid fa-car"></i> <p>Mileage</p>
           </button>
         </li>
         <li className="sidebar-item">
-          <button className="sidebar-btn">
+          <button className="sidebar-btn" onClick={()=> openYearModal()}>
           <i className="fa-solid fa-square-plus"></i>
           <p>Engine</p>
           </button>
         </li>
         <li className="sidebar-item">
-          <button className="sidebar-btn">
+          <button className="sidebar-btn" onClick={()=> openYearModal()}>
           <i className="fa-solid fa-square-plus"></i>
            <p>Color</p>
           </button>
         </li>
         <li className="sidebar-item">
-          <button className="sidebar-btn">
+          <button className="sidebar-btn" onClick={()=> openYearModal()}>
           <i className="fa-solid fa-car"></i> <p>Bodystyle</p>
           </button>
         </li>
@@ -197,7 +198,7 @@ const Sidebar = () =>{
              <span className="modal-count">1</span>
            </Link>
          </li>
-         <Link to="#" className="modal-result">
+         <Link to="/buypage" className="modal-result">
            View Results
          </Link>
        </ul>

@@ -102,6 +102,9 @@ input:checked + .slider:before {
   
   height: 72px;
 }
+.sidebar-btn:hover{
+  /* transform: scale(1.2); */
+}
 .sidebar-btn i{
  font-size: 20px;
 }
@@ -132,6 +135,7 @@ input:checked + .slider:before {
 .sidebar-btn{
   padding-left: 15px;
 }
+
 
 .modal-list{
   display: flex;
@@ -195,4 +199,11 @@ padding: 25px;
   align-items: center;
   height: 24px;
   border-radius: 50%;
+}
+
+ .sidebar-item:nth-child(7) p {
+  font-size: 9px;
+  /* background-color: red; */
+  /* padding-right: 100px; */
+  /* text-align: end; */
 }

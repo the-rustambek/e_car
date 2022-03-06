@@ -50,8 +50,13 @@
 .splide-slide{
   margin-bottom: 40px;
 }
+.splide-box{
+  transition: 0.3s;
+}
+.splide-box:hover{
+  transform: scale(0.9);
+}
 .splide-links{
-  
   text-align: center;
   width: 400px;
   height: 60px;
@@ -69,6 +74,7 @@ transition: 0.3s;
   border: 1px solid #008AC9;
   transform: scale(0.9);
 }
+
 @media (max-width:1420px) {
   .splide .container-fluid{
     width: 1160px;

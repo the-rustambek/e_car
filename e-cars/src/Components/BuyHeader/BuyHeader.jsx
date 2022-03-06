@@ -7,6 +7,8 @@ import Menu from "../../Assets/Img/Menu.png";
 import { Link } from "react-router-dom";
 import UnstyledSelectCustomRenderValue from "../Dropdown/Dropdown";
 import BuyUnstyledSelectCustomRenderValue from "../Dropdown/BuyDropdown";
+import PhoneSelectCustomRenderValue 
+from "../Dropdown/PhoneDropdown";
 
 
 const BuyHeader = () =>{
@@ -31,12 +33,12 @@ const BuyHeader = () =>{
               </Link>
             </li>
             <li className="navs-item">
-              <Link to=""
+              <Link to="/electric"
                className="navs-link">
                 Why Electric ?
               </Link>
             </li> <li className="navs-item">
-              <Link to=""
+              <Link to="/charging"
                className="navs-link">
                 Charging
               </Link>

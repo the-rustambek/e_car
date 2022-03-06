@@ -11,17 +11,17 @@ const OtherVehicles = () => {
       </h3>
       <ul className="other-list">
         <li className="other-item">
-        <Link to="/buypage" className="other-link">
+        <Link to="/vehiclespage" className="other-link">
           <img src={otherCar} alt="otherCar" className="other-img" />
           </Link>
         </li>
         <li className="other-item">
-            <Link to="/buypage" className="other-link">
+            <Link to="/vehiclespage" className="other-link">
               Pre owned 121212  are  ned 2Pre owned Pre owned 1 
               </Link>
           </li>
           <li className="other-item">
-            <Link to="/buypage/pending" className="other-link">
+            <Link to="/vehiclespage" className="other-link">
             Pending sale</Link>
           </li>
         
